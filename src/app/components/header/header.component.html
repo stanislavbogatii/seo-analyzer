@@ -1,0 +1,39 @@
+<header>
+  <mat-toolbar class="shadow-sm">
+    <p-button (onClick)="sidebarVisible = true" mat-icon-button class="mr-4 flex item-center justify-center" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </p-button>
+    <a
+    [routerLink]="['/']"
+    class="cursor-pointer">
+      <img class="h-8" src="assets/images/logo.svg" alt="Logo">
+    </a>
+    <!-- <span class="uppercase text-xl text-[#fa2851]">
+      Seo Extensive Digital
+    </span> -->
+    <span class="example-spacer"></span>
+
+    <a
+    class="text-lg hover:text-blue-600"
+      [routerLink]="['/sign-in']">
+      Login
+    </a>
+
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button> -->
+  </mat-toolbar>
+
+  <p-sidebar [(visible)]="sidebarVisible">
+    <h3>Sidebar</h3>
+    <p>
+        Lorem ipsum dolor sit amet...
+    </p>
+  </p-sidebar>
+
+
+</header>
+
